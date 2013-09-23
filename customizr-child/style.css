@@ -1,0 +1,98 @@
+/******************************************************************************
+Theme Name: A Customizr Child Theme - Solvent Studios
+Theme URI: N/A - A one time build for solventstudios.com
+Description: A build upon the Customizr WordPress Theme for solventstudios.com 
+Author: Taylor Thompson
+Author URI: http://solventstudios.com
+Template: customizr
+Version: 1.0 Alpha
+-------------------------------------------------------------------------------
+All questions related to copyright material, intellectual property, and general
+inquiries of Solvent Studios should be be asked at http://solventstudios.com
+-------------------------------------------------------------------------------
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+******************************************************************************/
+
+
+/***************** A Customizr Child Theme by Taylor Thompson ****************/
+
+@import url("../customizr/style.css"); /** Import Parent CSS **/
+
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300); /** Google font 'Oxygen' **/
+
+/*****************
+General CSS Below
+*****************/
+
+* {
+	font-family: 'Oxygen', sans-serif;
+}
+
+body {
+	font-size: 1em;
+	line-height: 25px;
+}
+
+
+/****************
+Header CSS Below
+****************/
+
+header.tc-header {
+	background-color: #5a5a5a;
+}
+
+.navbar-inner {
+	background-image: none !Important;
+	background-color: #cacaca !Important;
+	height: 115px;
+	margin: 8px 20px 0px !Important;
+}
+
+.row-fluid .span9 {
+	padding: 0;
+}
+
+.navbar .nav > li > a {
+	float: none;
+	/*padding: 10px 15px 10px;    Padding and position for menu items (a)*/
+	color: #5a5a5a;
+	text-decoration: none;
+	text-shadow: none;
+}
+
+.navbar .nav > li > a:hover {
+	color: #000000;
+}
+
+.site-logo img {
+	padding-top: 3px;
+}
+/****************
+Body CSS Below
+****************/
+
+
+
+/****************
+Footer CSS Below
+****************/
+
+div.span4.social-block.pull-left {
+	display: none;
+}
+
+div.span4.backtop {
+	display: none;
+}
+
+footer#footer .colophon {
+	background-color: #5a5a5a;
+	padding: 30px 20px;
+}
+
+footer#footer a, footer#footer p {
+	color: white !Important;
+	font-size: .9em;
+}
