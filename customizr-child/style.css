@@ -26,28 +26,44 @@ General CSS Below
 *****************/
 
 * {
-	font-family: 'Oxygen', sans-serif;
+	font-family: 'Oxygen', sans-serif;			/* Sets font */
 }
 
 body {
 	font-size: 1em;
-	line-height: 25px;
+	line-height: 25px;							/* Sets size, and line height of font */
 }
 
 
 /****************
 Header CSS Below
 ****************/
+@media screen and (min-width: 980px) {
+
+	header.tc-header {
+		background-color: #5a5a5a;
+		position: fixed;						/* Sets the fixed position on the header when in Desktop Mode */
+		width: 100%;
+		top: 0;
+		z-index: 100;
+	}
+}
 
 header.tc-header {
-	background-color: #5a5a5a;
+	background-color: #5a5a5a;					/* Header background color */
 }
 
 .navbar-inner {
 	background-image: none !Important;
-	background-color: #cacaca !Important;
+	background-color: #cacaca !Important;		/* Sets navbar background, height, margin */
 	height: 115px;
 	margin: 8px 20px 0px !Important;
+}
+
+@media screen and (max-width:980px){
+	.navbar-inner {
+		height: 45px;							/* Sets navbar height on Mobile/Tablet Mode */
+	}
 }
 
 .row-fluid .span9 {
@@ -62,37 +78,176 @@ header.tc-header {
 	text-shadow: none;
 }
 
-.navbar .nav > li > a:hover {
+/***********************************************************************************************
+									Navbar Effects Below
+
+Need to figure out how to make this section work properly.
+Goal is to have the hover work - then keep the hover effect active on the item that's clicked.
+Navbar effect to visualize which page was last clicked on - or is currently 'active'.
+***********************************************************************************************/
+
+.navbar .nav > li > a:hover { 
 	color: #000000;
+	font-weight: 500;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);			/* See Above ^ */
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
 }
 
-.site-logo img {
-	padding-top: 3px;
+.navbar .nav > li > a:active { 
+	color: #000000;
+	font-weight: 500;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);			/* See Above ^ */
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
 }
+
+/***********************************************************************************************
+									Navbar Effects End
+											-
+									Header CSS continues below
+***********************************************************************************************/
+@media screen and (min-width:980px) {
+	.site-logo img {
+		padding-top: 3px;			/* Site logo padding */
+	}
+
+	/*************************
+	Title CSS In Desktop Mode
+	*************************/
+
+	.site-title {
+		font-family: 'Oxygen', sans-serif;
+		text-shadow: none;
+		vertical-align: center;
+	}
+
+	.navbar-wrapper .brand {
+		padding: 24px;
+	}
+
+	div.brand.span3.pull-left {
+		height: 128px;
+	}
+
+	.navbar-wrapper .brand h1 {
+		font-size: 38px;
+		font-weight: 100;
+		margin: auto;
+		padding-top: 18px;
+	}
+	/************************
+	END CSS For Desktop Mode
+	************************/
+}
+
+
+@media screen and (max-width:980px) {
+	.site-logo img {					/* Hides Logo IMG */
+		display: none;
+	}
+}
+
+/**********************************************************
+CSS For Site Title - Breakpoints, Responsiveness, etc, etc.
+***********************************************************/
+
+.site-title {
+	font-family: 'Oxygen', sans-serif;
+	text-shadow: none;
+	vertical-align: center;
+}
+
+.navbar-wrapper .brand h1 {
+	font-size: 38px;
+	font-weight: 100;
+}
+
+@media screen and (max-width:1368px) and (min-width:980px) {
+	.site-title {
+		font-family: 'Oxygen', sans-serif;
+		text-shadow: none;
+		vertical-align: center;
+	}
+
+	.navbar-wrapper .brand h1 {
+		font-size: 32px;
+		font-weight: 100;
+	}
+}
+
+@media screen and (max-width:1165px) and (min-width:980px) {
+	.site-title {
+		font-family: 'Oxygen', sans-serif;
+		text-shadow: none;
+		vertical-align: center;
+	}
+
+	.navbar-wrapper .brand h1 {
+		font-size: 24px;
+		font-weight: 100;
+	}
+}
+/*****************************
+End Site Title Breakpoint CSS
+*****************************/
+
 /****************
 Body CSS Below
 ****************/
 
+.entry-title {
+	display: none;				/* Hides entry title (Page, Post, etc) */
+}
 
+@media screen and (min-width: 980px) {
+
+	#main-wrapper {
+		margin-top: 120px;			/* Sets top margin for main wrapper when in desktop mode */
+		margin-bottom: 20px;
+	}
+
+	.container {
+		padding: 25px 0px 25px 0px;
+	}
+
+	.featurette-divider {
+		display: none;				/* Hides featurette-divider */
+	}
+
+	.carousel {
+		margin-bottom: 0px;			/* Top margin for Carousel */
+		margin-top: 120px;
+	}
+
+}
 
 /****************
 Footer CSS Below
 ****************/
 
-div.span4.social-block.pull-left {
+div.span4.social-block.pull-left {		/* Hides social block */
 	display: none;
 }
 
-div.span4.backtop {
+div.span4.backtop {						/* Hides the 'back to top' button in footer */
 	display: none;
 }
 
 footer#footer .colophon {
-	background-color: #5a5a5a;
+	background-color: #5a5a5a;			/* Sets footer background & color */
 	padding: 30px 20px;
 }
 
-footer#footer a, footer#footer p {
+footer#footer a, footer#footer p {		/* Attribution text size/color */
 	color: white !Important;
-	font-size: .9em;
+	font-size: 1em;
+}
+
+div.span4.credits {
+	margin: 0 auto;
+	float: none;						/* Centers attrbution */
+	width: 50%;
 }
