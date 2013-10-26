@@ -6,7 +6,8 @@ function content_before_fp($html) {
 	$before_fp ='<p id="content_before_fp">Solvent Studios is a dynamic design studio creating cutting edge products in the realms of 
 	game design, music, 3d art production and model fabrication. Featuring a blended mix of young yet experienced 
 	artisans and seasoned IT professionals at the top of their careers – Solvent Studios provides the best possible array 
-	of assets available to bring your project to a more than successful completion.<p>'; //Put your HTML inside this var
+	of assets available to bring your project to a more than successful completion.</p> <hr /> 
+	<p id="fp_intro">Check out our current projects!</p>'; //Put your HTML inside this var
 	return $before_fp.$html;
 }
 

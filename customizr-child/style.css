@@ -35,6 +35,13 @@ body {
 	color: #121214;
 }
 
+hr {
+	margin: 20px 0;
+	border: 0;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid black;
+}
+
 
 /****************
 Header CSS Below
@@ -215,6 +222,12 @@ Body CSS Below
 	font-size: 1.2em;			/* font-size for the Solvent Intro above the Featured Pages! */
 }
 
+#fp_intro {
+	font-size: 1.5em;
+	font-weight: 700;
+	text-align: center;
+}
+
 @media screen and (min-width: 980px) {
 
 	#main-wrapper {
@@ -271,7 +284,7 @@ footer#footer .colophon {
 footer#footer p, footer#footer a {
 	font-size: 16px;
 	line-height: 21px;
-	color: white !Important;
+	color: #121214 !Important;
 	margin-bottom: 2px;
 	text-align: left;
 }
