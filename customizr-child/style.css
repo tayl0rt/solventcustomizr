@@ -38,7 +38,7 @@ body {
 hr {
 	margin: 20px 0;
 	border: 0;
-	border-top: 1px solid #000000;
+	border-top: 1px solid #000000;				/* CSS for hr - thicken it up a bit, margins, etc. */
 	border-bottom: 1px solid black;
 }
 
@@ -103,7 +103,7 @@ Need to COMMENT THIS CSS TOMORROW!!!
 		position: relative;
 		margin-top: 0px;
 		margin-bottom: 0px;				
-		margin-left: 4% !Important;
+		margin-left: 4% !Important;				/* General margin/position stuff */
 		margin-right: auto;
 		width: 100%;
 		max-width: 67%;
@@ -112,7 +112,7 @@ Need to COMMENT THIS CSS TOMORROW!!!
 		background-image: none !Important;
 		background-color: #000000 !Important;
 		width: 100%;
-		max-width: 670px;
+		max-width: 670px;						/* Max-width, margins, and the float have to to do with position on the header */
 		margin: 155px 5% 0px 0px !Important;
 		float: right;
 	}
@@ -130,20 +130,20 @@ Need to COMMENT THIS CSS TOMORROW!!!
 }
 
 .nav {
-	padding: 4px 5px;
+	padding: 4px 5px;							/* .nav padding */
 }
 
 .navbar .nav > li > a {
 	float: none;
 	color: #7d7e7d;
-	text-decoration: none;
+	text-decoration: none;						/* CSS for the menu items! */
 	text-shadow: none;
 	padding: 5px 20px 5px 20px;
 	font-size: 24px;
 }
 
 .navbar .nav > li > a:first-letter {
-	font-size: 24px;
+	font-size: 24px;							/* Need this for consistency in the font size - note the :first-letter psuedo */
 }
 
 
@@ -175,6 +175,10 @@ Navbar effect to visualize which page was last clicked on - or is currently 'act
 		-o-transform: scale(1.1);
 	}
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This achieves the goal stated above! ^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 	.navbar .nav > li.current-menu-item > a, .navbar .nav > li.current-menu-ancestor > a {
 		color: white !Important;
 		font-weight: 500;
@@ -197,6 +201,7 @@ Navbar effect to visualize which page was last clicked on - or is currently 'act
 
 	div.brand.span3 {
 	padding: 5px 0px !Important;
+	height: 100% !Important;		/* Logo Image Div height 100% & Padding! */
 	}
 }
 
@@ -204,7 +209,7 @@ Navbar effect to visualize which page was last clicked on - or is currently 'act
 
 @media screen and (max-width:980px) {
 	.site-title {
-		display: none;
+		display: none;			/* hides .site-title */
 	}
 }
 
@@ -224,7 +229,7 @@ Body CSS Below
 
 #fp_intro {
 	font-size: 1.5em;
-	font-weight: 700;
+	font-weight: 700;			/* font/text CSS for the Featured Pages headline! */
 	text-align: center;
 }
 
@@ -234,7 +239,7 @@ Body CSS Below
 			}
 
 	.container {
-		padding: 25px 0px 25px 0px;
+		padding: 25px 0px 25px 0px;	/* padding for .container */
 	}
 
 	.featurette-divider {
@@ -253,7 +258,6 @@ Footer CSS Below
 ****************/
 
 footer#footer {
-	color: #fafafa !important;
 	border-top: 12px solid #121214 !Important;
 	background: #121214;
 	padding: 5px 0px 5px 0px;
@@ -284,7 +288,7 @@ footer#footer .colophon {
 footer#footer p, footer#footer a {
 	font-size: 16px;
 	line-height: 21px;
-	color: #121214 !Important;
+	color: #121214 !Important;			/* Copyright CSS! */
 	margin-bottom: 2px;
 	text-align: left;
 }
