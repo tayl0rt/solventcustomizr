@@ -42,6 +42,23 @@ hr {
 	border-bottom: 1px solid black;
 }
 
+.btn-primary {
+	color: white;
+	background-image: linear-gradient(to bottom, #000000, #000000) !Important;		/* CSS For Buttons! */
+	text-shadow: 0 0px 0 rgba(0, 0, 0, 0.25) !Important;
+	background-color: #000000;
+}
+
+.btn-primary:hover, 
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+	color: white;								/* CSS for button HOVER */
+	background-color: #000000;
+}
+
 
 /****************
 Header CSS Below
@@ -187,6 +204,36 @@ This achieves the goal stated above! ^
 		-ms-transform: scale(1.1);
 		-o-transform: scale(1.1);
 	}
+/***********************************/
+
+	.navbar .nav li.dropdown.open > .dropdown-toggle,
+	.navbar .nav li.dropdown.active > .dropdown-toggle,
+	.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+		background-color: #000000;
+		color: #FFFFFF;						/* Colors menu items that have a dropdown nested menu */
+	}
+
+	.dropdown-menu > li > a {
+		color: #121214;						/* The dropdown menu itself */
+		background-color: white;
+	}
+
+	.caret:hover {
+		border-top-color: #777777 !Important;
+		border-bottom-color: #777777 !Important;
+	}
+	
+	.navbar .nav li.dropdown > a:hover .caret,
+	.navbar .nav li.dropdown > a:focus .caret {
+		border-top-color: #777777;
+		border-bottom-color: #777777;
+	}
+
+	.navbar .nav li.dropdown.current-menu-ancestor > a .caret,
+	.navbar .nav li.dropdown.open.current-menu-ancestor > .dropdown-toggle .caret {
+		border-top-color: #777777;
+		border-bottom-color: #777777;
+}
 
 }
 /***********************************************************************************************
