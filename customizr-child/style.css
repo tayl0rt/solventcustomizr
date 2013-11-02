@@ -63,6 +63,14 @@ hr {
 /****************
 Header CSS Below
 ****************/
+
+@media screen and (max-width: 980px){
+	header.tc-header {
+		border-bottom: 10px solid #121214; /* Border for the header on MOBILE */
+		border-top: 10px solid #121214;
+	}
+}
+
 @media screen and (min-width: 980px) {
 
 	header.tc-header {
@@ -107,6 +115,7 @@ Need to COMMENT THIS CSS TOMORROW!!!
 
 -- Related to the Navbar, in DESKTOP MODE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 
 @media screen and (min-width: 980px) {
 
