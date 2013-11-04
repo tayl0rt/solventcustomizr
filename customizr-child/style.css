@@ -30,7 +30,7 @@ General CSS Below
 }
 
 body {
-	font-size: 18px;
+	font-size: 1.125em;
 	line-height: 26px;							/* Sets size, and line height of font */
 	color: #121214;
 }
@@ -342,7 +342,7 @@ footer#footer .colophon {
 }
 
 footer#footer p, footer#footer a {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 21px;
 	color: #121214 !Important;			/* Copyright CSS! */
 	margin-bottom: 2px;
